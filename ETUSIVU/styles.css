@@ -1,12 +1,11 @@
 body {
     display: flex;
     align-items: center;
-    margin: 0;
-    min-height: 100vh;
-    min-width: 100vh;
     flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+    margin: 0;
 }
-
 .navbar {
     display: flex;
     justify-content: flex-end;
@@ -16,6 +15,14 @@ body {
     position: sticky;
     overflow: hidden;
     top: 0;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 50px;
 }
 
 .navbar a {
@@ -90,5 +97,30 @@ footer {
 @media screen and (max-width: 768px) {
     .navbar a {
         display: none;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    .viiva {
+        height: 3px;
+        width: 300px;
+    }
+
+    .desc p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desc {
+        font-size: 15px;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
